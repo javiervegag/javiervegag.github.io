@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
     <link rel="stylesheet" type="text/css" href="stylesss.css">
-    <style>
-th, td {
-  border: 2px solid;
-}
-</style>
 </head>
 <body>
     <h1>Javier Vega</h1>
@@ -21,49 +16,62 @@ th, td {
     <h2>Personal summary</h2>
     <h3>My name is Javier Vega, student of civil engineering, civil works. I am in my fourth year and I am concentrating on web pages. I really like soccer and playing sports.</h3>
 
-    <table id="MiTabla" style="border: 2px solid black; font-size: 20px;" >
+    <table id="MiTabla">
         <tr>
-            <th>Skill</th> 
-            <th>Level</th>
+            <th class="bordes">Skill</th> 
+            <th class="bordes">Level</th>
         </tr>
         <tr>
-            <td>Python</td>
-            <td>High</td>
+            <td class="bordes">Python</td>
+            <td class="bordes">High</td>
         </tr>
         <tr>
-            <td>JavaScript</td>
-            <td>Medium</td>
+            <td class="bordes">JavaScript</td>
+            <td class="bordes">Medium</td>
         </tr>
         <tr>
-            <td>HTML/CSS</td>
-            <td>Low</td>
+            <td class="bordes">HTML/CSS</td>
+            <td class="bordes">Low</td>
         </tr>
         <tr>
-            <td>Git</td>
-            <td>Medium</td>
+            <td class="bordes">Git</td>
+            <td class="bordes">Medium</td>
         </tr>
         <tr>
-            <td>Excel</td>
-            <td>High</td>
+            <td class="bordes">Excel</td>
+            <td class="bordes">High</td>
         </tr>
         <tr>
-            <td>SQL</td>
-            <td>Medium</td>
+            <td class="bordes">SQL</td>
+            <td class="bordes">Medium</td>
         </tr>
         <tr>
-            <td>Ruby</td>
-            <td>Low</td>
+            <td class="bordes">Ruby</td>
+            <td class="bordes">Low</td>
         </tr>
         <tr>
-            <td>English</td>
-            <td>High</td>
+            <td class="bordes">English</td>
+            <td class="bordes">High</td>
         </tr>
         <tr>
-            <td>Spanish</td>
-            <td>High</td>
+            <td class="bordes">Spanish</td>
+            <td class="bordes">High</td>
         </tr>
     </table>
+
+    <input type="text" id="Anotacion">
+    <button onclick="cambiar()">Anotacion</button>
+
+    <div id="nuevaanotacion">
+    </div>
+
+    <script>
+        function cambiar() {
+            var Anotacion = document.getElementById('Anotacion').value;
+
+            var seccion = document.getElementById('nuevaanotacion');
+            seccion.textContent = Anotacion;
+        }
+    </script>
 </body>
 </html>
-
-<elemento></elemento>
